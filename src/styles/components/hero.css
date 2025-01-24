@@ -1,0 +1,14 @@
+header {
+    background-image: url(/src/assets/Image\ background\ Accueil\ M.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__background img {
+    width: 100%;
+}
+
+.photo__pres img {
+    width: 100%;
+}

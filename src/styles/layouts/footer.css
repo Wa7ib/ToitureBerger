@@ -1,0 +1,42 @@
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer div,
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu__list {
+      display: none;
+    }
+  
+    .menu__toggle {
+      display: flex;
+    }
+  
+    .icon__accueil {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .icon__accueil > div {
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,92 @@
+header {
+    padding: 0 20px;
+}
+
+.header__logo{
+    background-image: url(../../assets/Logo-TB.png);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 20vw;
+    padding: 30px 10px;
+}
+
+.header__logo img{
+    width: 80%;
+    height: auto;
+}
+
+.header__search {
+  width: 55px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: #F2681B;
+  border: none; 
+  color: white; 
+  cursor: pointer; 
+}
+
+.header__search img{
+    width: 100%;
+    height: auto;
+}
+
+button p{
+    margin: 0;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--2xl);
+  transition: all 0.4s ease;
+
+  &.headroom--not-top {
+    background-color: var(--gray-100);
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__end {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.headroom {
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+
+
+@media (min-width: 960px) {
+  .header {
+    background-color: var(--gray-100);
+    align-items: stretch;
+  }
+  .header__start {
+    display: flex;
+    align-items: center;
+  }
+  .header__end {
+    flex-direction: row;
+  }
+  .headroom--top .header__end svg > * {
+    stroke: var(--gray-800);
+  }
+}
