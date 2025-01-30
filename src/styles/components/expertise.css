@@ -1,0 +1,25 @@
+.expertise__accueil h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 25px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.expertise__accueil b{
+    font-weight: 700;
+}
+
+.expertise__accueil h2::before{
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--brand-button);
+}
+
+.expertise p{
+    padding : 10px 0;
+}

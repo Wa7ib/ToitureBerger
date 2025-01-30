@@ -1,0 +1,38 @@
+.icon__accueil{
+    margin: auto;
+    margin-top: -35px;
+}
+
+.icon__accueil img{
+    width: 50px;
+}
+
+.icon__accueil div:nth-child(2)  div img{
+    width: 40px;
+}
+
+.icon__accueil div div{
+    background: white;
+    border-radius: 50%;
+    border: 2px solid var(--brand-dominante);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__accueil > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon__accueil p {
+    text-align: center;
+    font-weight: 500;
+    width: 50%;
+    text-wrap: wrap;
+}

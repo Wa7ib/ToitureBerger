@@ -1,29 +1,26 @@
-header {
-    padding: 0 20px;
-}
 
 .header__logo{
-    background-image: url(../../assets/Logo-TB.png);
-    display: flex;
-    justify-content: center;
-    height: auto;
+    background-color: var(--brand-button);
+    height: 100%;
     width: 20vw;
-    padding: 30px 10px;
+    padding: 20px 0;
 }
 
 .header__logo img{
     width: 80%;
     height: auto;
+    margin: 0 10%;
 }
 
 .header__search {
-  width: 55px;
-  height: 25px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
   background-color: #F2681B;
   border: none; 
   color: white; 
-  cursor: pointer; 
+  cursor: pointer;
+  padding: 10px 20px; 
 }
 
 .header__search img{
@@ -31,50 +28,50 @@ header {
     height: auto;
 }
 
-button p{
-    margin: 0;
-}
-
 .header {
-  position: fixed;
   z-index: 10;
-  top: 0;
-  left: 0;
   width: 100%;
   min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--2xl);
-  transition: all 0.4s ease;
-
-  &.headroom--not-top {
-    background-color: var(--gray-100);
-  }
 }
 
-.header__logo {
+button{
+  width: auto;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #F2681B;
+  border: none; 
+  color: white; 
+  cursor: pointer;
+  padding: 10px 20px; 
+}
+
+.text__header{
+  margin: 15px 0;
   display: flex;
 }
 
-.header__end {
+.text__header:nth-child(1)::before{
+  content: '';
+  width: 40px;
+  margin: auto 10px 0 0;
+  height: 1.5px;
+  background-color: var(--brand-button);
+  margin-bottom: 10px;
+}
+h1{
+  font-size: 25px;
+}
+
+.button__contact{
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 5px 0;
 }
 
-.headroom {
-  transition: transform 200ms linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
-}
-
-
-
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   .header {
     background-color: var(--gray-100);
     align-items: stretch;
@@ -89,4 +86,4 @@ button p{
   .headroom--top .header__end svg > * {
     stroke: var(--gray-800);
   }
-}
+} */

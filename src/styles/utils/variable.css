@@ -1,0 +1,13 @@
+:root {
+    /* color */
+    --brand-dominante: #001d49;
+    --brand-button: #f2681b;
+    --brand-secondary: #0046af;
+    --gray-100: #000000;
+    --gray-200: #d9d9d9;
+    --gray-300: #ffffff;
+
+    /* typographie */
+    --font-mono: "Roboto", serif;
+    --font-scondary: 'Lato', sans-serif;
+}

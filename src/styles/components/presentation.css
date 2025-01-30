@@ -1,0 +1,34 @@
+.pres__accueil h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 25px;
+    font-weight: 300;
+}
+
+.pres__accueil b{
+    font-weight: 700;
+}
+
+.pres__accueil h2::before{
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--brand-button);
+}
+
+.pres__tb p{
+    padding : 10px 0;
+}
+
+.photo__pres img{
+    padding: 5px 0 5px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+   
+}
