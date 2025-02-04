@@ -1,0 +1,20 @@
+.index{
+    background: url(/src/assets/image-background-accueil-m.png);
+    padding-bottom: 50px !important;
+}
+
+.activites{
+    background: url(/src/assets/image-background-activites-m.png);
+}
+
+.ossature-bois{
+    background: url(/src/assets/image-background-ossature-m.png);
+}
+
+.moyens{
+    background: url(/src/assets/image-background-moyens-m.png);
+}
+
+.galerie{
+    background: url(/src/assets/image-background-galerie-m.png);
+}

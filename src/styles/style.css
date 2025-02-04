@@ -8,11 +8,11 @@
 /* layouts */
 @import "/src/styles/layouts/+.css";
 
+/* pages */
+@import "/src/styles/pages/+.css";
+
 /* components */
 @import "/src/styles/components/+.css";
 
 /* utils */
 @import "/src/styles/utils/+.css";
-
-/* pages */
-@import "/src/styles/pages/+.css";

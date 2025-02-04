@@ -1,11 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     padding: 0 20px;
     font-family: "Roboto", serif;
     color: var(--brand-dominante);
+}
+
+/* Activités page activités */
+
+.pres__activites {
+    margin-top: 25px;
+}
+
+.pres__activites h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pres__activites::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--brand-button);
+    margin: 10px 0;
+}
+
+.pres__activites h2::before {
+    content: '';
+    display: block;
+    justify-content: center;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--brand-button);
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+.pres__activites p {
+    margin-bottom: 10px;
+}
+
+.title__ossature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ossature::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--brand-button);
+    margin: 25px 0;
+}
+
+.title__ossature::before {
+    content: '';
+    display: block;
+    justify-content: center;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: var(--brand-button);
+}
+
+.ossature h2 {
+    padding-top: -15px;
+}
+
+.ossature img{
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.ossature h3{
+    margin: 30px 0;
 }
