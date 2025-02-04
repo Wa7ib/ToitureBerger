@@ -1,6 +1,7 @@
 :root {
     /* color */
     --brand-dominante: #001d49;
+    --brand-dominante-: rgba(0, 29, 73, 0.2);
     --brand-button: #f2681b;
     --brand-secondary: #0046af;
     --gray-100: #000000;

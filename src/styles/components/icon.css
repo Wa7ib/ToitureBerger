@@ -1,6 +1,7 @@
 .icon__accueil{
     margin: auto;
     margin-top: -35px;
+   
 }
 
 .icon__accueil img{
@@ -35,4 +36,8 @@
     font-weight: 500;
     width: 50%;
     text-wrap: wrap;
+}
+
+.icon__nettoyage{
+    margin: 15px 0;
 }

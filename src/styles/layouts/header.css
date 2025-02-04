@@ -1,9 +1,21 @@
+.header {
+  z-index: 10;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header :nth-child(1){
+  align-self: flex-start;
+}
 
 .header__logo{
     background-color: var(--brand-button);
     height: 100%;
     width: 20vw;
-    padding: 20px 0;
+    padding: 45px 0 20px 0;
 }
 
 .header__logo img{
@@ -28,14 +40,6 @@
     height: auto;
 }
 
-.header {
-  z-index: 10;
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 button{
   width: auto;

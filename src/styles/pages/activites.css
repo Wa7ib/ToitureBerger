@@ -1,5 +1,5 @@
 .header__background {
-    background-image: url(/src/assets/image-background-accueil-m.png);
+    background-image: url(/src/assets/image-background-activites-m.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,8 +12,3 @@
 .hero__background img {
     width: 100%;
 }
-
-.photo__pres img {
-    width: 100%;
-}
-
