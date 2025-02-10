@@ -1,0 +1,39 @@
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap:2px;
+}
+
+h2::before{
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; 
+    background-color: var(--brand-button);
+}
+
+.title__inconvenients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.title__inconvenients::after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: var(--brand-button);
+    margin: 10px 0;
+}
+
+.inconvenients :nth-child(4) p{
+    padding-bottom: 15px;
+}
+
+.inconvenients h3::before{
+    background-color: white;
+}

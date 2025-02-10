@@ -2,11 +2,11 @@
 title = "moyens"
 }}
 <div>
-    <p>Moyens</p>
+    <p class="text__header">Moyens</p>
     <h1>
-        Toiture Berger s'appuie sur des 
-        équipements de pointe et 
-        une équipe de professionnels qualifiés 
+        Toiture Berger s'appuie sur des
+        équipements de pointe et
+        une équipe de professionnels qualifiés
     </h1>
     <p>Nous intervenons dans les départements du Doubs, de la Haute-Saône et du Territoire de Belfort.
         <br>Pour tout renseignement complémentaire, n'hésitez pas à nous contacter.
@@ -17,16 +17,16 @@ title = "moyens"
     </section>
     <nav>
         <ul class="menu__moyens">
-            <li><a href="#">Bureau</a></li>
-            <li><a href="#">Ateliers</a></li>
-            <li><a href="#">Matériels</a></li>
+            <li><a href="moyens-bureau">Bureau</a></li>
+            <li><a href="moyens-ateliers">Ateliers</a></li>
+            <li><a href="moyens-materiels">Matériels</a></li>
         </ul>
     </nav>
-    <div class="bureau__moyens">
-        <h1>Bureau d'étude</h1>
+    <div class="moyens__img">
+        <h2>Bureau d'étude</h2>
         <picture>
             <img src="/src/assets/bureau.png" alt="Bureau d'étude">
         </picture>
     </div>
-    {{>"components/logiciels.hbs"}}
-    {{>"layouts/footer.hbs"}}
+{{>"components/bureau.hbs"}}
+{{>"layouts/footer.hbs"}}

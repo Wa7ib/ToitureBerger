@@ -1,0 +1,32 @@
+{{>"layouts/header.hbs"
+title = "moyens"
+}}
+<div>
+    <p class="text__header">Moyens</p>
+    <h1>
+        Toiture Berger s'appuie sur des 
+        équipements de pointe et 
+        une équipe de professionnels qualifiés 
+    </h1>
+    <p>Nous intervenons dans les départements du Doubs, de la Haute-Saône et du Territoire de Belfort.
+        <br>Pour tout renseignement complémentaire, n'hésitez pas à nous contacter.
+    </p>
+    <button class="button__contact">
+        <p>Contact</p>
+    </button>
+    </section>
+    <nav>
+        <ul class="menu__moyens">
+            <li><a href="moyens-bureau">Bureau</a></li>
+            <li><a href="moyens-ateliers">Ateliers</a></li>
+            <li><a href="moyens-materiels">Matériels</a></li>
+        </ul>
+    </nav>
+    <div class="moyens__img">
+        <h2>Matériels de chantier</h2>
+        <picture>
+            <img src="/src/assets/materiels.png" alt="Matériels">
+        </picture>
+    </div>
+{{>"components/materiels.hbs"}}
+{{>"layouts/footer.hbs"}}

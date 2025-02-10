@@ -1,0 +1,49 @@
+.logiciels p {
+    padding-bottom: 20px;
+}
+
+.ateliers h3 {
+    padding: 20px 0;
+}
+
+.ateliers div:nth-last-child(1) {
+    margin-bottom: 25px;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+.moyens__img img {
+    margin-left: 20px;
+}
+
+.materiels div:nth-last-child(1) {
+    margin-bottom: 25px;
+}
+
+.menu__moyens li {
+    list-style: none;
+}
+
+.menu__moyens a {
+    text-decoration: none;
+    color: var(--brand-button);
+    font-weight: 700;
+    font-size: larger;
+}
+
+.menu__moyens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.menu__moyens ::before {
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--brand-button);
+    margin: 25px 0;
+}

@@ -1,10 +1,39 @@
-.ossature__icon {
+.ossature__icon div div{
     background: white;
     border-radius: 50%;
     border: 2px solid var(--brand-dominante);
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.ossature__icon img{
+    width: 30px;
+}
+
+.ossature__icon div{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.title__icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.title__icon2::before{
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; 
+    background-color: var(--brand-button);
+}
+
