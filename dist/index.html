@@ -5,23 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToitureBerger</title>
-  <link rel="stylesheet" crossorigin href="/assets/style-SD5RfbYB.css">
+  <script type="module" crossorigin src="/assets/script-B5Qt9EMX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-Bt6OLFFC.css">
 </head>
 
 <body>
-  <section class="header__background">
-    <header class="header">
+  <section class="index header__background">
+    <header class="header headroom">
       <div class="header__logo">
-      <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
-    </div>
-      <nav class="menu">
+        <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
+      </div>
+      <button class="header__menuBtn menuBurger" aria-controls="mainNav" aria-expanded="false"
+        aria-label="Accéder au menu">
+        <span class="menuBurger__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="index">Accueil</a></li>
           <li class="menu__item"><a class="menu__link" href="activites">Activités</a></li>
           <li class="menu__item"><a class="menu__link" href="ossature-bois">Ossature bois</a></li>
-          <li class="menu__item"><a class="menu__link" href="moyens">Moyens</a></li>
+          <li class="menu__item"><a class="menu__link" href="moyens-bureau">Moyens</a></li>
           <li class="menu__item"><a class="menu__link" href="galerie">Galerie</a></li>
         </ul>
+        <button class="header__search" aria-label="Rechercher">
+          <svg aria-hidden="true" width="24" height="24" aria-hidden="true" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="10" r="7" stroke="#191919" stroke-width="2"></circle>
+            <path stroke="#191919" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
+          </svg>
+        </button>
         <button class="header__search" aria-label="Rechercher">
           <p>Devis</p>
         </button>
@@ -47,21 +59,21 @@
             <img src="data:image/svg+xml,%3csvg%20width='70'%20height='70'%20viewBox='0%200%2070%2070'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M67.5828%2034.0211L56.6453%2012.1461C56.4635%2011.7827%2056.1839%2011.4771%2055.8381%2011.2636C55.4923%2011.0501%2055.0939%2010.9372%2054.6875%2010.9375H15.3125C14.9061%2010.9372%2014.5077%2011.0501%2014.1619%2011.2636C13.8161%2011.4771%2013.5365%2011.7827%2013.3547%2012.1461L2.41719%2034.0211C2.26659%2034.3255%202.188%2034.6604%202.1875%2035V50.3125C2.1875%2051.4728%202.64844%2052.5856%203.46891%2053.4061C4.28938%2054.2266%205.40218%2054.6875%206.5625%2054.6875H63.4375C64.5978%2054.6875%2065.7106%2054.2266%2066.5311%2053.4061C67.3516%2052.5856%2067.8125%2051.4728%2067.8125%2050.3125V35C67.812%2034.6604%2067.7334%2034.3255%2067.5828%2034.0211ZM27.0867%2015.3125L30.368%2021.875H22.132L18.8508%2015.3125H27.0867ZM40.2117%2015.3125L43.493%2021.875H35.257L31.9758%2015.3125H40.2117ZM27.6008%2032.8125L24.3195%2026.25H32.5555L35.8367%2032.8125H27.6008ZM40.7258%2032.8125L37.4445%2026.25H45.6805L48.9617%2032.8125H40.7258ZM53.8508%2032.8125L50.5695%2026.25H58.8055L62.0867%2032.8125H53.8508ZM56.618%2021.875H48.382L45.1008%2015.3125H53.3367L56.618%2021.875ZM6.5625%2035.5168L15.3125%2018.0168L24.0625%2035.5168V50.3125H6.5625V35.5168ZM28.4375%2050.3125V37.1875H63.4375V50.3125H28.4375Z'%20fill='%23001D49'/%3e%3c/svg%3e" alt="Logo Toiture">
         </div>
         <h3 class="title__toiture">Toiture</h3>
-        <p>Un savoir-faire inégalé  en réparation et rénovation de toitures</p>
+        <p>Un savoir-faire inégalé en réparation et rénovation de toitures</p>
     </div>
     <div class="icon__nettoyage">
         <div class="picture__toiture">
             <img src="data:image/png;base64,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" alt="Logo Nettoyage">
         </div>
         <h3 class="title__nettoyage">Nettoyage</h3>
-        <p>Le savoir- faire pour un nettoyage impeccable  après chaque chantier.</p>
+        <p>Le savoir- faire pour un nettoyage impeccable après chaque chantier.</p>
     </div>
     <div class="icon__renovation">
         <div class="picture__renovation">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVuSURBVHgB7ZzBTuNGGMf/4xA1u6WQPVSqVEBZtbtST+S4PW24AT00+wTAbW/sGwBPULj1Bpx6BC7dVD0QnqC750aq2aVSjwa1Kis2/nY+OwHbY8d24sROzE8CJWNPkvnl83j8zTgC40a5VsbnpTo07TmIqhAoy9KKYw/d+iO8BegYF40m+kBgXJhfXpcfd00+qiEeuqzXxI25g38aetRK2RdjC9mCOyr6RBxEFZRdMV8tV1AU+4gfIVHYxQ3t9RI0hSwyt1yDEEfyUTl4J9Llv6bsS87ln24VFcQsTDyGoEX5nVd71K+jhD30IHsRs/DDGsg8CNhqyA53T36dB9BDDoevV6vQ6A+fLToKtBRWP1ti5lfq8v+R7zaiHUxd70JvGgjDlnIKNWIiSWGyI8buU/gb9mmMeAH91zeRXqcfKfze19cGjDvpGrIAj02KQm0M4Y3dmCFL4feeKb1yFmdDzPTDTainYx1T9CJK2FsMIoXfm8Sm9QV1KCBt+MMVcOwpNWRjvh+ZFJsSPiuWcNX6jZ+kHzFFsa2UCXo1Yild1rtRk27EWNFiDeKc6Hjf2IhUP1kpTAmlqQ+4bDXTjZiiz6hW0DaikLwUm05fk/KhJH70FOh41zgMrZasFO+4qIzpUjVdMcIbMdQMrZO0FJJnPuGVI+rpieEGkrdxdBxaJ0kpBbFk5Wt4vOREUCU9McJUL/BM87xnHY38LyyJNvqS0h04Wkkt14dbTFGMUBv4343esw5fGihhb73WviXBSVQpjNa5Or8jxc7XJFWMEXKByI3RZKNUObaErpw4Upg2KR1wNi4J4hAmh3M5caQEkJ4YTajRUfEcDkH0kiP6kCLU/dMTUyD1Q7Y58xaRYDlewiNFCPf7yoxgemLa2pZSRtoS4hAuJ+rhU3U9E3Sejpj5VXl9ROtKuXp2CCdYTjQpdoddcZUJHI1eTJAUIVOX717voh9UOdE7Wr+rew1noxXTU0pjG4PQlWOnQqNJsaPluauMR8FysDi66ZNhSuliy3gcef8pTc5sUsVVppEVtaNJho9CSlzsQeBfnlKZC3ptiR3+oZRdKadKuSMXNNyIyaIUTl1OPziVLa96ttxGCzO8PibbkVLxbLHTFg6GcyhlUcrCymZnQq+ibPNJWyQfMVmTYi8Q2JKn4Zr/DlKKz+KiZMWMSgp/+yY9grXaoW3g79/tMQv3H+VSGW1RtUQIrCF4xQMPBjfkjIRv1jC5zndUUuZWtyLPJATBg7iQWc5k+pjxkWLYqyb+H8EykPGQ0llXE3EZCQYVk20phjXrYOIMxevjqEK69C8mdSl0iIK2i49ytoEcp+CiJjti04g89x1Af2KyIOV9Yx1DJL6YHEhh4onJiRQmupgcSWGiicmZFCZcTA6lML3F5FQKEywmx1IYfzE5l8KoYu6lWLjF3Eu55S7tsLDy072UO+yIse8i21e35lMK04kYoa48yLEURrOSxUrmnA7yLIXRZAZ9XSktYAdJMYZSGCkGnlVMdDJokueWMZXCcB9TcZWYookkGGMpjOazOjtWbtSXMZfCaD7r6MsYhAmQwnDEuMVoMVZOepkQKQyLOXEXibrz3sDITJAURvO546OMLx5sIQ4TJoUp4KqlY/ZJDe6z0zOUnwKXf56FvsIESmHseyJnvj33GejVMPu0goffvMW/LfVMxYfbl9/9Ijvvl+rLjrcU5i7tMLeyK59tBux3LLc10aZL64clCHXYq6l9+qLxl8J48jErvAyrhr6ZDCmM+/biq9YhZp48krqeIS6EPVw0XmJCUO+7vmo1MCv7nN6/v+JEt264vGj8jAkiZPqEf7aE6iCx6Fj+aViXDSROBvlxrKzzCQCkVfqaAtmAAAAAAElFTkSuQmCC" alt="Logo Renovation">
         </div>
         <h3 class="title__renovation">Rénovation</h3>
-        <p>Le savoir-faire pour des rénovations  de toiture durables et fiables.</p>
+        <p>Le savoir-faire pour des rénovations de toiture durables et fiables.</p>
     </div>
 </section><section class="pres__accueil">
     <div class="pres__tb">

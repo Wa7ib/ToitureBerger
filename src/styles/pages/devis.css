@@ -1,0 +1,38 @@
+.formulaire__devis form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.formulaire__devis form input{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.formulaire__devis form textarea{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.formulaire__devis form button{
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: var(--brand-button);
+    color: white;
+    border: none;
+}
+
+.radio__construction{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.radio__construction input[type="radio"]{
+   transform: scale(2);
+}

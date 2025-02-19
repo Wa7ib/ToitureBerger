@@ -18,3 +18,11 @@
 .galerie{
     background: url(/src/assets/image-background-galerie-m.png);
 }
+
+.contact{
+    background: url(/src/assets/image-background-contact-m.png);
+}
+
+.devis{
+    background: url(/src/assets/image-background-devis-m.png);
+}

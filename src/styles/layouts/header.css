@@ -7,57 +7,69 @@
   justify-content: space-between;
 }
 
-.header :nth-child(1){
+.header :nth-child(1) {
   align-self: flex-start;
 }
 
-.header__logo{
-    background-color: var(--brand-button);
-    height: 100%;
-    width: 20vw;
-    padding: 45px 0 20px 0;
+.header__logo {
+  background-color: var(--brand-button);
+  height: 100%;
+  width: 20vw;
+  padding: 45px 0 20px 0;
 }
 
-.header__logo img{
-    width: 80%;
-    height: auto;
-    margin: 0 10%;
+.header__logo img {
+  width: 80%;
+  height: auto;
+  margin: 0 10%;
 }
 
 .header__search {
-  width: 100%;
-  height: 100%;
+  width: 0%;
+  height: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.header__devis{
+  height: 50%;
+  width: 10%;
   border-radius: 30px;
   background-color: #F2681B;
-  border: none; 
-  color: white; 
+  border: none;
+  color: white;
   cursor: pointer;
-  padding: 10px 20px; 
+  padding: 10px 0px;
 }
 
-.header__search img{
-    width: 100%;
-    height: auto;
+.header__search img {
+  width: 100%;
+  height: auto;
 }
 
-
-.button__contact{
+.button__contact {
   display: flex;
   justify-content: center;
   border-radius: 30px;
   background-color: #F2681B;
-  border: none; 
-  color: white; 
+  border: none;
+  color: white;
   cursor: pointer;
-  padding: 10px 20px
+  padding: 10px 20px;
+  margin: 5px auto;
 }
 
-.text__header{
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.text__header {
   margin: 15px 0;
   display: flex;
 }
 
-.text__header:nth-child(1)::before{
+.text__header:nth-child(1)::before {
   content: '';
   width: 40px;
   margin: auto 10px 0 0;
@@ -66,16 +78,10 @@
   margin-bottom: 10px;
 }
 
-h1{
+h1 {
   font-size: 25px;
 }
 
-.button__contact{
-  display: flex;
-  justify-content: center;
-  margin: 5px auto;
-  
-}
 
 /* @media (min-width: 960px) {
   .header {

@@ -4,7 +4,8 @@
     background-position: center;
     color: var(--gray-300);
     margin: 0 -20px; 
-    padding: 0px 20px;
+    padding: 0px 20px 10px;
+
 }
 
 .hero__background img {

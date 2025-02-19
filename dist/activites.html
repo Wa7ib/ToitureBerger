@@ -5,23 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToitureBerger</title>
-  <link rel="stylesheet" crossorigin href="/assets/style-SD5RfbYB.css">
+  <script type="module" crossorigin src="/assets/script-B5Qt9EMX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-Bt6OLFFC.css">
 </head>
 
 <body>
-  <section class="header__background">
-    <header class="header">
+  <section class="activites header__background">
+    <header class="header headroom">
       <div class="header__logo">
-      <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
-    </div>
-      <nav class="menu">
+        <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
+      </div>
+      <button class="header__menuBtn menuBurger" aria-controls="mainNav" aria-expanded="false"
+        aria-label="Accéder au menu">
+        <span class="menuBurger__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="index">Accueil</a></li>
           <li class="menu__item"><a class="menu__link" href="activites">Activités</a></li>
           <li class="menu__item"><a class="menu__link" href="ossature-bois">Ossature bois</a></li>
-          <li class="menu__item"><a class="menu__link" href="moyens">Moyens</a></li>
+          <li class="menu__item"><a class="menu__link" href="moyens-bureau">Moyens</a></li>
           <li class="menu__item"><a class="menu__link" href="galerie">Galerie</a></li>
         </ul>
+        <button class="header__search" aria-label="Rechercher">
+          <svg aria-hidden="true" width="24" height="24" aria-hidden="true" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="10" r="7" stroke="#191919" stroke-width="2"></circle>
+            <path stroke="#191919" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
+          </svg>
+        </button>
         <button class="header__search" aria-label="Rechercher">
           <p>Devis</p>
         </button>
@@ -39,22 +51,23 @@
         <p>Contact</p>
     </button>
 </div>
-<div>
-    <h2>Activités</h2>
+</section>
+<div class="pres__activites">
+    <h2 class="title__activites">Activités</h2>
     <p>
-        L'entreprise Toiture BERGER et son expertise de plus de 15 ans,
+        L'entreprise <b>Toiture BERGER</b> et son expertise de plus de 15 ans,
         vous offre différentes préstations pour rénover ou réparer votre toiture
     </p>
 </div>
-<section class="activités__card">
+<section class="activites__card">
     <div class="charpente__activites">
         <h3>Charpente</h3>
         <picture>
             <img src="/assets/charpente-activites-dphVDo_n.png" alt="Charpente">
         </picture>
         <p>
-            Les charpentes traditionnelles sont conçues, taillées et assemblées dans nos locaux.
-            Nos charpentiers s’adaptent à toute demande.
+            Les <b>charpentes</b> traditionnelles sont conçues, taillées et assemblées dans nos locaux.
+            Nos <b>charpentiers</b> s’adaptent à toute demande.
         </p>
         <button class="button__activites">
             <p>En savoir plus</p>
@@ -66,7 +79,8 @@
             <img src="/assets/couverture-activites-DaGznifi.png" alt="Couverture">
         </picture>
         <p>
-            Couverture en tuile mécanique (qui est la plus courante) terre cuite de chez KORAMIC et la tuile béton de chez MONNIER.
+            <b>Couverture</b> en tuile mécanique (qui est la plus courante) terre cuite de chez <b>KORAMIC</b> et la tuile
+            béton de chez <b>MONNIER</b>.
         </p>
         <button class="button__activites">
             <p>En savoir plus</p>
@@ -78,8 +92,8 @@
             <img src="/assets/zinguerie-activites-DmFdW7eo.png" alt="Zinguerie">
         </picture>
         <p>
-           Toiture Berger effectue tous types de zinguerie. 
-           Pose de gouttières, tôles de rives, habillage de cheminée en neuf ou en rénovation.
+            <b>ToitureBerger</b> effectue tous types de <b>zinguerie</b>.
+            Pose de gouttières, tôles de rives, habillage de cheminée en neuf ou en rénovation.
         </p>
         <button class="button__activites">
             <p>En savoir plus</p>
@@ -91,8 +105,8 @@
             <img src="/assets/conduits-activites-CuAdOkAH.png" alt="Conduits">
         </picture>
         <p>
-            Les conduits de fumée sont conçus, fabriqués et installés par 
-            nos experts. Nos techniciens s’adaptent à toutes vos 
+            Les <b>conduits</b> de fumée sont conçus, fabriqués et installés par
+            nos experts. Nos techniciens s’adaptent à toutes vos
             exigences.
         </p>
         <button class="button__activites">
@@ -105,7 +119,8 @@
             <img src="/assets/etancheite-activites-B6-oCREq.png" alt="Étanchéité">
         </picture>
         <p>
-            Toiture berger s’adapte à tous types de terrasses Support : Bois ou béton… Finition : végétalisée, gravillonée, apparente…
+            <b>ToitureBerger</b> s’adapte à tous types de terrasses Support : Bois ou béton… Finition : végétalisée,
+            gravillonée, apparente…
         </p>
         <button class="button__activites">
             <p>En savoir plus</p>
@@ -117,7 +132,7 @@
             <img src="/assets/bardage-activites-C8aZIQbw.png" alt="Bardage">
         </picture>
         <p>
-            Toiture Berger réalise tous types de bardage, qu'il s'agisse de l'installation de panneaux de façade, 
+            <b>ToitureBerger</b> réalise tous types de <b>bardage</b>, qu'il s'agisse de l'installation de panneaux de façade,
             de lames de bois ou de métal, en neuf ou en rénovation.
         </p>
         <button class="button__activites">
@@ -130,8 +145,8 @@
             <img src="/assets/isolation-activites-DjJ9eaUS.png" alt="Isolation">
         </picture>
         <p>
-            Toiture Berger réalise tous types de travaux 
-            d'isolation, qu'il s'agisse de l'isolation thermique et acoustique 
+            <b>ToitureBerger</b> réalise tous types de travaux
+            <b>d'isolation</b>, qu'il s'agisse de l'isolation thermique et acoustique
             des murs, des combles ou des sols.
         </p>
         <button class="button__activites">
@@ -144,8 +159,8 @@
             <img src="/assets/surelevation-activites-f_7A6H-X.png" alt="Surélévation">
         </picture>
         <p>
-            La famille s’agrandit ou vous voulez tout simplement plus d’espace. 
-            La surélévation d’une toiture  Elle vous offre de nombreux avantages.
+            La famille s’agrandit ou vous voulez tout simplement plus d’espace.
+            La <b>surélévation</b> d’une toiture Elle vous offre de nombreux avantages.
         </p>
         <button class="button__activites">
             <p>En savoir plus</p>
@@ -157,7 +172,7 @@
             <img src="/assets/extension-activites-CY-VrwLU.png" alt="Extension">
         </picture>
         <p>
-            Toiture Berger réalise tous types d'extensions de toi,
+            <b>ToitureBerger</b> réalise tous types d'extensions de toi,
             en ajoutant des surfaces supplémentaires ou en modifiant la structure existante.
         </p>
         <button class="button__activites">

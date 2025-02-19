@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     padding: 0 20px;
     font-family: "Roboto", serif;
@@ -102,4 +103,8 @@ h3::before{
     border-radius: 50%;
     width: 10px;
     height: 10px;
+}
+
+.orange{
+    color: var(--brand-button);
 }

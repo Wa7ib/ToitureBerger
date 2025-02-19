@@ -5,33 +5,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToitureBerger</title>
-  <link rel="stylesheet" crossorigin href="/assets/style-SD5RfbYB.css">
+  <script type="module" crossorigin src="/assets/script-B5Qt9EMX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-Bt6OLFFC.css">
 </head>
 
 <body>
-  <section class="header__background">
-    <header class="header">
+  <section class="ossature-bois header__background">
+    <header class="header headroom">
       <div class="header__logo">
-      <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
-    </div>
-      <nav class="menu">
+        <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
+      </div>
+      <button class="header__menuBtn menuBurger" aria-controls="mainNav" aria-expanded="false"
+        aria-label="Accéder au menu">
+        <span class="menuBurger__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="index">Accueil</a></li>
           <li class="menu__item"><a class="menu__link" href="activites">Activités</a></li>
           <li class="menu__item"><a class="menu__link" href="ossature-bois">Ossature bois</a></li>
-          <li class="menu__item"><a class="menu__link" href="moyens">Moyens</a></li>
+          <li class="menu__item"><a class="menu__link" href="moyens-bureau">Moyens</a></li>
           <li class="menu__item"><a class="menu__link" href="galerie">Galerie</a></li>
         </ul>
+        <button class="header__search" aria-label="Rechercher">
+          <svg aria-hidden="true" width="24" height="24" aria-hidden="true" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="10" r="7" stroke="#191919" stroke-width="2"></circle>
+            <path stroke="#191919" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
+          </svg>
+        </button>
         <button class="header__search" aria-label="Rechercher">
           <p>Devis</p>
         </button>
       </nav>
     </header>
-    <main><picture>
-    <img src="/src/assets/Image background Ossature.png" alt="Background ossature">
-</picture>
-<div>
-    <p>Ossature bois</p>
+    <main><div>
+    <p class="text__header">Ossature bois</p>
     <h1>
         Un savoir-faire que nous mettons
         à votre service pour vos demandes en ossatures 
@@ -42,19 +51,24 @@
     <button class="button__contact">
         <p>Contact</p>
     </button>
+    </section>
+<section class="ossature">
 </div>
-<div>
-    <h2>Ossature en bois</h2>
+<div >
+    <h2 class="title__ossature">Ossature en bois</h2>
     <p>
-        L'entreprise Toiture BERGER vous propose ses services pour la conception, 
+        L'entreprise <b>ToitureBerger</b> vous propose ses services pour la conception, 
         la fabrication et l'installation d'ossatures en bois. 
-        Nos experts s'adaptent à toutes vos demandes pour garantir des solutions sur mesure en matière de construction en bois.
-        Depuis que le bois est utilisé pour la construction de maison, de nombreuses techniques ont été développées :
-        <br>Panneau porteur, poteau-poutre, colombage, panneaux de bois massif ou bois massif empilés.
-        Nous allons nous consacrer uniquement à la technique de l'ossature bois.
+        Nos experts s'adaptent à toutes vos demandes pour garantir des <b>solutions sur mesure</b> en matière de construction en bois.
+        Depuis que le bois est utilisé pour la <b>construction de maison</b>, de nombreuses techniques ont été développées :
+    </p>
+    <br>
+    <p> 
+        Panneau porteur, poteau-poutre, colombage, panneaux de bois massif ou bois massif empilés.
+        Nous allons nous consacrer uniquement à la technique de <b>l'ossature bois</b>.
         La maison ossature bois est la technique de construction la plus répandue car elle s'adapte le mieux à la
         plupart
-        des styles régionaux.
+        <b>des styles régionaux</b>.
     </p>
 </div>
 <div>
@@ -62,10 +76,11 @@
         <img src="/assets/ossature-bois-CW9RU7Bv.png" alt="Ossature en Bois">
     </picture>
     <p>
-        Les murs de la maison à ossature bois sont réalisés sur la base d’une structure constitué de montants en bois
+        <b>Les murs de la maison à ossature bois sont réalisés sur la base d’une structure constitué de montants en bois
         sec
-        espacé en lesquels sont placés les matériaux isolants.
+        espacé en lesquels sont placés les matériaux isolants.</b>
     </p>
+    <br>
     <p>
         Cette technique de construction permet également une préfabrication de murs complets en atelier, à l’abri des
         intempéries. La structure est livré sur chantier sous forme de modules d’une hauteur d’étage et montée en
@@ -74,20 +89,21 @@
     </p>
 </div>
 <div>
-    <h2>
+    <h3 class="title__ossature">
         Pourquoi opter pour l’ossature en bois ?
-    </h2>
+    </h3>
     <p>
-        La technique de la maison à ossature bois est très simple. Ils forment une ossature, d’où son nom. La maison à
-        ossature bois se distingue par les montants de son ossature qui constituent la hauteur de l’étage.
+        La technique de la maison à ossature bois est très <b>simple</b>. Ils forment une ossature, d’où son nom. <b>La maison à
+        ossature bois</b> se distingue par les montants de son ossature qui constituent la hauteur de l’étage.
     </p>
 </div>
-<section class="ossature__card">
-    <div>
-        <picture>
+</section>
+<section class="ossature__icon">
+    <div class="tech">
+        <div class="icon__eco">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHQSURBVHgB1VS9TgJBEP72DmM0UbHTIOZMtMfOEguTw+rsLPUJ1NJK7ezUN9BKO7E6jAVQWsEDECEQEjqIkqggjLN7hx5yQLDSSfZvdua72ZlvDvjrIoZahGMWiCLQkEcDaVQShd8BzpkGxkSSd4ZHW0D7Ywvlh2w/N63fBYOdKTDCBXSxCtAufz4ILXCLkSM0rCBa71XexaHTwZe+JfZ43ld6IMoji5K97nUN+AI2G4Ybu8Uglo9FR2dgaIShTS4AydwFuRgpXtPdHiIL/TWF1kRG2TRp1b9QoY2IWsOxPI8qFswoBknY3GE74pH0qnUXxILQkphZkaBraOMQ5cSNPxDbTq9co/52iPHAPIcszxamlh7x8lRxMkVUc82d3IxRHINEMH1UONo5JJUEOBA90m20GMu4TyCMIiH36XKFl4dFW3LtSu2H5a8j8vma4isjUbUbUArhUq1CHA0Fk50EOGBEJyjd38mt3mX0nCtwgmc5J9tcoCgml9Oo52o9YJJaAdiQPHQKeNq58u+UBfNYRSnbTuOZVHd0PPb5HIUsYBsHKNvnXtc+rcfPaYn8D20c3x3iSMnu8fdvvQIzP2zuciSGOstfVzFxpcjs1f1L+QTvJIv8zmrfsAAAAABJRU5ErkJggg==" alt="Economique">
-        </picture>
-        <h3>Economique</h3>
+        </div>
+        <h3 class="title__icon2">Economique</h3>
         <p>
             Le bois est en moyenne 7 fois plus isolant que le béton.
             Une maison en bois bien conçue offre une excellente isolation thermique
@@ -95,101 +111,132 @@
             L’installation d’un isolant peut être plus coûteuse à l’achat.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__solide">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVHgBrVRLUsJAEH2ThCqWcwChOIJHwB24gRuIJ0BPAJxAOIF4AsKKuIKbmCK6zxILQ9sziWSAJBorryqfnuS9me7peUDFEJmjsi0h61K/+55/8q3VaelnuAsRbsJiwWZ3CMKDoqWDhz6C16V+bXT7fF8YDB+Cxth6L5eCjc6Aw2cQTeBYLguFhSuEJfHFkwkxYpVHbFfTk/949jc0O2OUxRVzFDeBFc/alzrNKHJRFqSyYa6qO8OJR3dSZ1+zw4wVtHVaBAmLpma9NGpcmoi5ahN5myzkp9LmVNYstuaIRXENEvOkNHd5NGNTeAeDlWvEhCIEq0yuyCWUETRgoWKkgnHT/g8GN2kb3ayLtGkV6B7qJJyDaMPXzTE+4zrIQ+DN+T7XJ4jEkJVUS03w7m1QgESwzj9/AvtI5grnYW+p/ozNAj8p+64KfNh2+ToK9DQ3cR7H+DDj1J7QvCVE++Xx1OSZg8rGrvW4nmN2nEEqYyJ2nBH+bF/k4yBm+EidJruxW+qg/2Kw4Jr5lwZbOb4BdTubOrY65RUAAAAASUVORK5CYII=" alt="Solide">
-        </picture>
-        <h3>Solide</h3>
+        </div>
+        <h3 class="title__icon2">Solide</h3>
         <p>
             La grande résistance mécanique du bois, alliée à sa légèreté, en ont fait un matériau de choix
             On a donc plus à prouver la solidité du bois.
             Le bois dans la construction autorise donc plus d’audace dans l’architecture
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__durable">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKbSURBVHgBhVVLbtpQFD3PGAWUjxhWgiBnBU12QAaVTCYlK4AdJFkBsIKSFZSuIHQSkDoIXQHuCrCgkTq01EE/if1y333+Bts5Eth+vve8+879WOAtHHfv6P+Ufla44vJPyCn+4zt+Ldw8N8H/jU4D+7VevGoID9v5DM2LUxhyhTIIMcLmfpxP3O6uIDmqBAFu8DifwCJyBB7cMDL17Ae0Jj7SUy8+xZM8T0cfEV8TsTLsxMRSjvFzMUIZLNuCLx6gZcqQG2ywocgSDfOh5GraA75GUKeo7J1ReA77V2mT8L0mbl0M410lbnOJD+sT0v4zDmrXmXV35sHYO4dOqoUj/V7gna12WrNRRZ7QXg34ckj3N7GuxxQpiDSycXMqoWV3KJFKFg+//5yYqEa6yq8ph8vYQW0MMeR7ldBtfnlRPpZUmkuoPO3XBySF6EPHfpfrUKVy0jLNuErKEMgvfDVkx0SUNN//sWPY7l6R5n0+npS3XAURvL8evKWXDQJL+Bzle0HhS17czkXGyOqR1v+U9g3kg7XcIQ/5TJRC6jLKQFgx8WvStBXtsGbnomynka4gSc2gEpZGMgJcVccOLz6lui4PqvCrXE4UDnflcsfGCMKxIIlY0ITixbA6inBUT5poU9TqPD+UDlPBSQooSZKSlHc8haIG0dJ8QvA8hl/x0o1mcEsGUrexIOf0LNgJiCRI58HEAGrCCXOQkYls9KwwaxNEvX5Qf9gh3y6mHGmRBAJXeCWTJlZRV6QeJILm8mF9pVs5hbcqJrTipoqJI8eIXI/ANX+W2nYfzQ/JR0B1X/SsvjRZdGieDPQh8tCyR6T3EGUIns/w+M2hzXuUo0S6quHAvXdEoSN/Hbi2+3wCCEu/kC7dOzQCLlGCFzAEDBtjBM3TAAAAAElFTkSuQmCC" alt="Durable">
-        </picture>
-        <h3>Durable</h3>
+        </div>
+        <h3 class="title__icon2">Durable</h3>
         <p>
             Les anciennes maisons à colombages, même mal entretenues, sont en parfaite conservation.
             Les bois sont traités et mis en œuvre selon des normes strictes, garantissant la durabilité.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__acoustique">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgB3ZQxbsIwFIa/OEGK1MXdKqFElnoBeoOOSafcAPUEvUJv0PYGvUHFRjduwAWQiEDMZGBgwjyHEaJYIWLgk55l6z3/tvX8XogPw7cRD88xu0XVFhrhg7J/qEDL7LEfQTCecSh65lzQFJokX4p9Ne5Kxedi9KtuF2TvgoxYQRO29hl03CCY5h88ZYauuL1pNnbTSK5eyInfDBjJ+p0uDPjEBmOGWaA4WE2P3CDL9y2o7DZiM/0lySBkRldCyfKBOav/yamW1yJ6DeW0lPGnvuS5N3YtqpS/OWkUOPlKqn1rO7tMktvaPOg9y379MKCSZ3o9z7djv8jgVaJHPqU293Ia5T8AAAAASUVORK5CYII=" alt="Acoustique">
-        </picture>
-        <h3>Acoustique</h3>
+        </div>
+        <h3 class="title__icon2">Acoustique</h3>
         <p>
             Les performances d’isolation acoustique du bois sont reconnues
             il peut absorber ou réfléchir les ondes sonores. Dans la maison à ossature bois, la correction et
             l’isolation acoustique sont facilitées par la technique à ossature.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__environnemental">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGHSURBVHgB5ZRPTsJAFMa/V8DggtiliUh6A/EElB24EU+gngBvIJwAPYFwAtjBjnIDjjD4J3HJEmPI8820FloHY3cmvKTN65s3v3nz5psC/90oU7bru3CLbvytJiobsNzwJaUlXk0yPY1MZSh8ch3vG3DeCjq5qMLhnnh+FFnKEwC8BGMR5zl0iQI9iVffDQxhU1MNc9eAXieBbV2cNjzZwfV2KAk8lgSHh8bP0TnUeI6MlgQWqCNvD8Q3f4PR0e9A3XzGHC+TQSKqT7dUbCG3GkEFy+0RhP2NzYk9r+Wa6oBZAqbbUDocWmBmlhSg7ECs0pIIYQckML79AfsugHixA1gMJxDO4lCBplhjYBMw1h9+lD+0A9Uo0ppoT1dWafZM/G38ALu1I8LMDtQW6k6OSrbJuJNAYEVVmm2zMLifrj4J1AJmPMo2qtEKo8S4Pm1dOUNXrZBDN72W/S6XGx0Q3UdfATbS8GFukEgrz1fZfg6e9HGNjqTUEMpJ7jHPZU99PKd0ut/2BREMeitIUTt3AAAAAElFTkSuQmCC" alt="Environnemental">
-        </picture>
-        <h3>Environnemental</h3>
+        </div>
+        <h3 class="title__icon2">Environnemental</h3>
         <p>
             La maison bois permet de stocker du carbone. Le CO² stocké dans la structure d’une maison à ossature bois
             Construire en bois, maison confortable, économique en énergie et vous aidez à la lutte contre l’effet de
             serre.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__rapide">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFlSURBVHgB5ZRBSsNAGIXftHVRoXTAjaANCUJ1mSPEhZBkFXfubE4gnsD2BNUTpN6gO7Mz3qCuFRKo4jaCoAsx/gmJmMwkZN8Hmcww/7z3TWYIsKHiBseuqTbW7J3oaKFu1u4cnaHH7sHHwPvTgzz08A3DsYrtg0d8PMd1hp3SKEmmGFlhPW0ywRYFK+Y52hliRa1Ki0Io9pXol83Tmy0wsj1ZcJXwBt1Eo14kpWXJiuaPqfC2jrYjUER+hPWdRoYzKW0270/I0JXRioaFXvxpibaqtb8QaEeWU2+Y6psImxR/0WmzYT7iFBzLDdN7qVhzMEpNC39wKdQQDQb9kHoOPUt0PzXaVdATCvdNg4w8OlGVEgP04NL2IjKY/4UN+l5ulN7HU/rmy2J52ZCxCzDoWWFK9epfl+YTpudUPKdyEQWlS14xJLP/VFUVYRWqOsOUaiZQlSWlEqU6HKrBm2vsVj+HDdQvC1SKQfVDWB0AAAAASUVORK5CYII=" alt="Rapide">
-        </picture>
-        <h3>Rapide</h3>
+        </div>
+        <h3 class="title__icon2">Rapide</h3>
         <p>
             La construction en ossature bois ne nécessite pas de temps de séchage, aucune attente donc avant finitions.
             Plus vite construite, la maison ossature bois réduit la période de remboursement de crédit et de paiement
             d’un loyer.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__entretien">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ5SURBVHgBhVQ9bxNBEH17FyQSidikQiKOLiKOKMM/ODrbNMkvsP0LSDo6nJIK8wvsVJRJmtgRRUwFVLhEiiUOnEgpz47Eh4hvebPnc3y2zxlp72N35u2bN7OrsFp4DQUH/4J9XDU93GVpN43lpZfQ2uWfjB10G0fRskImfzZcEKvi+vc+/JY/E+xxYQuWPuSXE07oMrrN+rgLueUcDNT30Uy3oWaCOdtpDP5+HYEF2MNlozrpZsFjmhrv+B2yWqMEs+zmz9YtM5qtUlM+j3KObT76nSbHGyxvCLsK0ptA7/xjzHllgxmq3bEZN+Yncizgkx0L6ndaiaB+x0cq68ZYRqAPnijm+p6ZXtlTtJNAmQ7TFIbpiQgXSpXMvKVfTQMmga5kpRueItk8VrxsJy5Pgmp9Sg1/8P8L0xPg5tgGHmz9XGRZwDzTAzas2bMCZXFotpdiar/W4bFXHTY5lhx4J+0oRCWCrb0oQgd16lNBECi+o3by2asPk8LsuWAhTY/t6nNrd7h6H6lNBynK0e98mwwNGZrzuUgQxebVUsXtkYc0vTKVLU7vrOronpTjgNIO95RU0MFs83i+nxnIwWLVACtd4uaVMCYOahFsuIAW4Xc59mJgpnosgBQh0K2QNWO0Lpt1EDxTqEUBNtLZmtEluNnBxekxep3PnOtxLkfnI/xsHozgrzttnpZ1hM3sGlB5y7/o2j8/tqiRJOPj8kP7VjcdXV/T1ew2SnwemKyUqsWZ5t9aJlU5NhFtuc6gikOFDzHLEkFRUljNCf2zGWHUj8XwEi5bsUy+jrD6XjRl4aLZovDUZSi4pC+tIsWYBxYxDe9Sh29fYv4DxLX8NMB+/voAAAAASUVORK5CYII=" alt="Entretien">
-        </picture>
-        <h3>Entretien</h3>
+        </div>
+        <h3 class="title__icon2">Entretien</h3>
         <p>
             La structure porteuse ne demande aucun entretien
-            Vous pouvez profiter de la tranquillitéd'esprit sans avoir à vous soucier desfrais d'entretien 
-            supplémentaires. 
+            Vous pouvez profiter de la tranquillitéd'esprit sans avoir à vous soucier desfrais d'entretien
+            supplémentaires.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__feu">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgBxZRBTsJAFIb/acGEqEmXJlDSG8gNrAuTggvxBIYT6A3EE4gnkBvAkh14AvEE1sS9LFyQKH2+NwURHNqJLvgX7WTmzZd/3rw3wFbk15u2oY5l3CVDn3EQBXmBdkCFGn8DFNUQ5ZPa/4DlRg0Ej0cjBntwCr0sp/lAh67036UWEjqfO73Hn1StS+4IfrQE+FFXzwVml5sdVk8v+KgdHsVwcbNcUH39+0BoD6w0rkFJN4XRMeJB/HsnvdkBA74ERe0MWFqTrnqyA87oNt2wwRlwxKkY6zUv9LKBQVMCQoC6RphcktyyQx0N2ysN16GrwM9pWrSJ+TjsTEpoggQv2C896oLfLQY/QwqrG5wJ5w858qC4YxZSbobD4k48nz0zkXReCXfsTJyO9Nz7dIxM+fWhLtxKFG6MkXZcL3ijw9RFix3w0bm9TFCZc6gHyeVKwadSMElvUr3vR4HogUM5dziErgKGEff162BkBxRJr87Q5hDJ5yLxE765vnZmrlFLCTzIf1xFX8VTeATfv1GgAAAAAElFTkSuQmCC" alt="Feu">
-        </picture>
-        <h3>Feu</h3>
+        </div>
+        <h3 class="title__icon2">Feu</h3>
         <p>
             Statistiques : Les maison à ossature bois ne sont pas plus souvent la proie des flammes que les maisons
             traditionnelles.
             Le bois, contrairement à d'autre matériaux, est stable au feu : sa combustion est prévisible et stable.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__evolutif">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH8SURBVHgBrVVNj9MwEH2x3TZAVopgQUGqVjlBTwhuHHtEiD/Ab+NvcOCYX8CJQ5cPyYeK7WEPFQpVltoOM3aTsttkUxBPimLJk2fPmzeTCEOYzxXOk9Svn5ZrFIW5LTzqJVnEU0ibopYzSLzzoS56C4EVKixxb7OGLqqbn4oDssdvTnEev4RCjkgSoUiIjB4kEC5BTc/EzbC98xwPX2e33zB/lcMQUYParhGJEiLK4IjYuAWkyRCpuI0x0Fh90IeEfBqfzLDG4MQs8Lm4RBfyeYatyltiqz7h4r2PlbuAmDZnRK9Qmwpj8xHfih/ow1qXeHB2iS0yCCGg3H28mH6H1i5o+PNuiqgOp42M7hL7AD6GsmA4hCKiKYrCNGhGt9PFCsfigiRhnX2uNt0RkkWkS3ZaHE/WgIvm3+QIspugmqp204rhVG/iSpbtWkMJ/GcIYt230sQm+FtIt/ckuZhuSL3ZCFu7fyCMQrdYW3Kfh5RHMhCysNx6x4KbobHbZLvkVyDU1dJ3hyc3M2/0IXDMuM79mu1GdvcXDrva4eRsA6EeoaZD7OgU8RODzZeyk4yzsOIZRY7DJX59Jf96woHhEFWw9aq1ExeNdWZpGvQOh30q1xu/Dz0DpHvABg1TXI1oyMrrlWdHcBFz0r1jencT/gme3nrXTSzIwC/gNy0KyOX5rN5uAAAAAElFTkSuQmCC" alt="Evolutif">
-        </picture>
-        <h3>Evolutif</h3>
+        </div>
+        <h3 class="title__icon2">Evolutif</h3>
         <p>
             La maison ossature bois est modulable, une extension ou transformation se fera sans problèmes.
             Rien de plus et de plus rapides que de faire une ouverture supplémentaire par exemple.
         </p>
     </div>
-    <div>
-        <picture>
+    <div class="tech">
+        <div class="icon__investissement">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIwSURBVHgBlVS7ThtBFD2zawucB9kSyV6yBb3hD5wCyesG5wuMvwDyBTZVyjhlKuALWCqIUoQyXUxviQ1RaiwSKc5jfXNm7NjelxNG2vH43jtn7uPca+N/VqVew4NN4Ntg+C9Tlatxag7WSi0ItvmvZWQih7BwjZuLk7xrhVzAR6sHBOvwRK+kzbMHpTr8Bco7V/jyrn8/wIIVYCz7DKKHm/NjI3P9KvctFO3c0PNDNgD1PZocLUhC2PIM4UWYd8XKU5gcKvWET869EZ4jtYUlK9vDDX+fl7tTlIDnTxNrpUOuQedVSXdZcebLbRwxV7co+weZeq/ukUZd2gg2Gp3lYBUauP61uRSTk4flnXioOr8GtN5aFNuz0zpBbAQ8tRnKh5lc53Kl+BLK8nA3eDuT3w36WNtkylQXVuUNRuFIi+dFKVIBOcPn8yDmyeNSb5pDj7mNp6Gw2jNVeFja+yuaAyrs8jtFcilUIb+P8Ute8MHbmC4MhhjjBJbUZm+Y3Ws6iH44GEdXKUAB261waujzU56n9dJn9XcTHo6cSdgZHaDwFF+/b5t0FFR25RfWBFAzX3sQSTXDwybz2DEctORjxoMejcI44OQim91Ke2Cv6DBJGRlmElmpFr+zDECOJt0FCV6ZxAOvSanDFFhlSmxLAmQuTQtNVt0t6wlyx4BIdNd/bzrKa8QIn+5l129yfwXNOzMLkSyUYz6RS3KknZw8+eNLvxyJx5nopHRFXOaNsD9t07AZApT3TwAAAABJRU5ErkJggg==" alt="Bon investissement">
-        </picture>
-        <h3>Evolutif</h3>
+        </div>
+        <h3 class="title__icon2">Bon investissement</h3>
         <p>
             Si dans tout les pays à haut niveau de vie, tels que les Etats-Unis, le Canada et la Scandinavie plus de 90
-            % des  maisons sont construites en ossature bois 
+            % des maisons sont construites en ossature bois
             ce n'est pas le hasard, les habitants de ces pays recherchent la qualité de vie avant tout !
+        </p>
+    </div>
+</section><section class="inconvenients">
+    <h2>Inconvévients</h2>
+    <div class="inconvenients__card2">
+        <h3 class="title__inconvenients">Préjugés</h3>
+        <p>D'ordre psychologique. La maison en ossature bois est assimilé à une cabane en planche par le grand public.
+            Ces préjugés disparaîtront avec le temps avec la réalisation de constructions de qualité.
+        </p>
+    </div>
+    <div class="inconvenients__card2">
+        <h3 class="title__inconvenients">Inertie thermique</h3>
+        <p>Pour une maison à ossature bois, l'absence d'inertie thermique peut présenter quelques avantages (en hiver,
+            le moindre rayon de soleil vous apportent des apports caloriques). Mais également inconvénients, en été, en
+            laissant les volets ouverts, si la chaleur pénètre dans la maison, elle peut donner l'impression qu'elle
+            n'est pas isolée.
+        </p>
+    </div>
+    <div class="inconvenients__card2">
+        <h3 class="title__inconvenients">Colle ou traitements thermiques</h3>
+        <p>Certains bois de constructions (lamellé collé, contre collé…) relativise ses atouts en matière d'écologie et
+            de santé. Les réglementations à ce sujet se sont durcies et les entreprises s'adaptent.
+            Construire en bois, maison confortable, économique en énergie et vous aidez à la lutte contre l'effet de
+            serre.
+        </p>
+    </div>
+    <div class="inconvenients__card2">
+        <h3 class="title__inconvenients">Surcoût</h3>
+        <p>Le surcoût peut atteindre 10 % par rapport à la maçonnerie, la maison à ossature bois tend à devenir un
+           produit de luxe. Cependant les économies d'énergie qui peuvent être réalisées dans les années qui suivent,
+           la différence peut être rentabilisé en 10 ans.
         </p>
     </div>
 </section></main>

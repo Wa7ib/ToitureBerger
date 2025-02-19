@@ -1,3 +1,63 @@
-{{>"layouts/header.hbs"}}
-
+{{>"layouts/header.hbs"
+title="contact"
+}}
+<div>
+    <p class="text__header">Contact</p>
+    <h1>Nous contacter.</h1>
+</div>
+</section>
+<section class="formulaire">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute demande d'information, nous vous invitons à remplir le formulaire ci-dessous pour établir au mieux nos
+        premiers échanges. </p>
+    <section class="icon__contact">
+        <div class="icon__mail">
+            <div class="picture"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5 25C4.3125 25 3.72417 24.7554 3.235 24.2663C2.74583 23.7771 2.50083 23.1883 2.5 22.5V7.5C2.5 6.8125 2.745 6.22417 3.235 5.735C3.725 5.24583 4.31333 5.00083 5 5H25C25.6875 5 26.2763 5.245 26.7663 5.735C27.2563 6.225 27.5008 6.81333 27.5 7.5V22.5C27.5 23.1875 27.2554 23.7763 26.7663 24.2663C26.2771 24.7563 25.6883 25.0008 25 25H5ZM15 16.25L5 10V22.5H25V10L15 16.25ZM15 13.75L25 7.5H5L15 13.75ZM5 10V7.5V22.5V10Z"
+                        fill="#0046AF" />
+                </svg>
+            </div>
+            <a href="mailto:toiture.berger@gmail.com">toiture.berger@gmail.com</a>
+        </div>
+        <div class="icon__phone">
+            <div class="picture"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 3.75C10.625 3.75 13.125 9.375 13.125 10C13.125 11.25 11.25 12.5 10.625 13.75C10 15 11.25 16.25 12.5 17.5C12.9875 17.9875 15 20 16.25 19.375C17.5 18.75 18.75 16.875 20 16.875C20.625 16.875 26.25 19.375 26.25 20C26.25 22.5 24.375 24.375 22.5 25C20.625 25.625 19.375 25.625 16.875 25C14.375 24.375 12.5 23.75 9.375 20.625C6.25 17.5 5.625 15.625 5 13.125C4.375 10.625 4.375 9.375 5 7.5C5.625 5.625 7.5 3.75 10 3.75Z"
+                        stroke="#0046AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <a href="tel:0632840009">06 32 84 00 09</a>
+        </div>
+        <div class="icon__place">
+            <div class="picture"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 11.6604 18.0442 12.0667 17.8871 12.4459C17.7301 12.825 17.4999 13.1695 17.2097 13.4597C16.9195 13.7499 16.575 13.9801 16.1959 14.1371C15.8167 14.2942 15.4104 14.375 15 14.375ZM15 2.5C12.6794 2.5 10.4538 3.42187 8.81282 5.06282C7.17187 6.70376 6.25 8.92936 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 8.92936 22.8281 6.70376 21.1872 5.06282C19.5462 3.42187 17.3206 2.5 15 2.5Z"
+                        fill="#0046AF" />
+                </svg>
+            </div>
+            <a href="9 impasse de la chevru 25700 Arcey">9 Impasse de la chevru 25700 Arcey</a>
+        </div>
+    </section>
+    <div class="form">
+        <form action="post">
+            <label for="name">Prénom /Nom <b class="orange">*</b></label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+            <br>
+            <label for="telephone">Numéro de téléphone <b class="orange">*</b></label>
+            <input type="text" name="telephone" id="telephone" required placeholder="Votre numéro">
+            <br>
+            <label for="email">Email <b class="orange">*</b></label>
+            <input type="email" id="email" name="email" required placeholder="Votre email">
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Ecrivez votre message"></textarea>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
 {{>"layouts/footer.hbs"}}
