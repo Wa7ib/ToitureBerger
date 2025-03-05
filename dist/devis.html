@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="moyens header__background">
+  <section class="devis header__background">
     <header class="header headroom">
       <div class="header__logo">
         <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
@@ -42,51 +42,72 @@
       </button>
     </header>
     <main><div>
-    <p class="text__header">Moyens</p>
-    <h1>
-        Toiture Berger s'appuie sur des 
-        équipements de pointe et 
-        une équipe de professionnels qualifiés 
-    </h1>
-    <p>Nous intervenons dans les départements du Doubs, de la Haute-Saône et du Territoire de Belfort.
-        <br>Pour tout renseignement complémentaire, n'hésitez pas à nous contacter.
-    </p>
-    <a href="contact">
-        <button class="button__contact">
-            <p>Contact</p>
-        </button>
-    </a>
-    </section>
-    <nav>
-        <ul class="menu__moyens">
-            <li><a href="moyens-bureau">Bureau</a></li>
-            <li><a href="moyens-ateliers">Ateliers</a></li>
-            <li><a href="moyens-materiels">Matériels</a></li>
-        </ul>
-    </nav>
-    <div class="moyens__img">
-        <h2>Matériels de chantier</h2>
-        <picture>
-            <img src="/assets/materiels-BWpuY2tY.png" alt="Matériels">
-        </picture>
-    </div>
-<section class="materiels">
-    <div>
-        <ul>
-            <li>1 Manitou MT 1840 EP nacelle + potence treuil (portée : 21m)</li>
-            <li>1 Monte matériaux Comabi de 21m</li>
-            <li>1 Mini-pelle Volvo EC25</li>
-            <li>2 Peugeot Boxer entièrement équipés</li>
-            <li>1 Mercedes sprinter entièrement équipés</li>
-            <li>1 Peugeot Expert• 1 Mercedes Vito</li>
-            <li>1 Renault Mascott benne</li>
-            <li>1 Remorque d’échafaudage sur pied Comabi 170m²</li>
-            <li>1 Remorque d’échafaudage sur pied ALTRAD 408m²</li>
-            <li>1 Remorque d’échafaudage suspendu MACC</li>
-            <li>1 Remorque Porte engin</li>
-        </ul>
-    </div>
-</section></main>
+    <p class="text__header">Devis</p>
+    <h1>Effectuez un devis gratuit avec ToitureBerger</h1>
+</div>
+</section>
+<h2 class="title__devis">Effectuer un devis</h2>
+<div class="formulaire__devis">
+    <form class="formdevis" action="post">
+        <label for="name">Nom <b class="orange">*</b></label>
+        <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+        <br>
+        <label for="name">Prénom <b class="orange">*</b></label>
+        <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+        <br>
+        <label for="adresse">Adresse <b class="orange">*</b></label>
+        <input type="text" id="adresse" name="adresse" required placeholder="Votre adresse">
+        <br>
+        <label for="telephone">Numéro de téléphone <b class="orange">*</b></label>
+        <input type="text" name="telephone" id="telephone" required placeholder="Votre numéro">
+        <br>
+        <label for="email">Email <b class="orange">*</b></label>
+        <input type="email" id="email" name="email" required placeholder="Votre email">
+        <br>
+        <div class="radio__construction">
+        <label for="construction">De la Construction</label>
+        <input type="radio" name="construction" id="construction">
+        <label for="renovation">De la Rénovation</label>
+        <input type="radio" name="construction" id="renovation">
+        </div>
+        <br>
+        <label for="longueur">Longueur de la toiture (m) :</label>
+        <input type="number" id="longueur" name="longueur" step="0.1" required>
+        <br>
+        <label for="largeur">Largeur de la toiture (m) :</label>
+        <input type="number" id="largeur" name="largeur" step="0.1" required>
+        <br>
+        <label>Surface totale (m²) :</label>
+        <input type="text" name="surface" id="surface" readonly>
+        <br>
+        <label for="materiau">Choix du matériau :</label>
+        <select name="materiau" id="materiau" required>
+            <option value="tuile" data-prix="50">Tuiles en terre cuite - 50€/m²</option>
+            <option value="ardoise" data-prix="70">Ardoise naturelle - 70€/m²</option>
+            <option value="bac_acier" data-prix="40">Bac acier - 40€/m²</option>
+            <option value="tole" data-prix="30">Tôle ondulée - 30€/m²</option>
+            <option value="zinc" data-prix="60€">Zinc - 60€/m²</option>
+        </select>
+        <br>
+        <label>Prix au m² (€) :</label>
+        <input type="text" id="prix__materiau" readonly>
+        <br>
+        <label for="inclinaison">Inclinaison du toit (°) :</label>
+        <input type="number" id="inclinaison" name="inclinaison" step="1" required>
+        <br>
+        <label><input type="checkbox" name="isolation" id="isolation" value="20">Isolation thermique (+20€/m²)</label>
+        <br>
+        <label>Prix total estimé (€) :</label>
+        <input type="text" id="prix__total" readonly>
+        <br>
+        <label for="informations">Informations complémentaires</label>
+        <textarea id="informations" name="informations" required placeholder="Informations complémentaires"></textarea>
+        <br>
+        <button type="button" onclick="calculer__estimation()">Calculer l'estimation</button>
+        <button type="submit">Envoyer ma demande</button>
+    </form>
+</div>
+</main>
 <footer>
   <div class="logo__copy">
     <picture class="logo__footer">

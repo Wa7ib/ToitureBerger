@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToitureBerger</title>
   <script type="module" crossorigin src="/assets/script-B5Qt9EMX.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/style-Bt6OLFFC.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-BlB8dAWP.css">
 </head>
 
 <body>
@@ -15,11 +15,14 @@
       <div class="header__logo">
         <img src="/assets/logo%20header-BSaHPcDG.svg" alt="logo header">
       </div>
-      <button class="header__menuBtn menuBurger" aria-controls="mainNav" aria-expanded="false"
-        aria-label="Accéder au menu">
-        <span class="menuBurger__bar" aria-hidden="true"></span>
+      <button class="header__hamburger" aria-label="Menu">
+        <svg aria-hidden="true" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="4" width="24" height="2" fill="#ffffff"></rect>
+          <rect y="11" width="24" height="2" fill="#ffffff"></rect>
+          <rect y="18" width="24" height="2" fill="#ffffff"></rect>
+        </svg>
       </button>
-      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+      <nav class="header__menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="index">Accueil</a></li>
           <li class="menu__item"><a class="menu__link" href="activites">Activités</a></li>
@@ -27,29 +30,31 @@
           <li class="menu__item"><a class="menu__link" href="moyens-bureau">Moyens</a></li>
           <li class="menu__item"><a class="menu__link" href="galerie">Galerie</a></li>
         </ul>
-        <button class="header__search" aria-label="Rechercher">
-          <svg aria-hidden="true" width="24" height="24" aria-hidden="true" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <circle cx="11" cy="10" r="7" stroke="#191919" stroke-width="2"></circle>
-            <path stroke="#191919" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
-          </svg>
-        </button>
-        <button class="header__search" aria-label="Rechercher">
-          <p>Devis</p>
-        </button>
       </nav>
+      <button class="header__search" aria-label="Rechercher">
+        <svg aria-hidden="true" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="10" r="7" stroke="#ffffff" stroke-width="2"></circle>
+          <path stroke="#ffffff" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
+        </svg>
+      </button>
+      <button class="header__devis" aria-label="Rechercher">
+        <a href="Devis">Devis</a>
+      </button>
     </header>
     <main><div>
     <p class="text__header">Activités</p>
     <h1>Un savoir-faire à votre service pour tous vos besoins
         en réparation et rénovation de toiture.
     </h1>
-    <p class="text__header">Nous intervenons dans les départements du Doubs, de la Haute-Saône et du Territoire de Belfort.
+    <p class="text__header">Nous intervenons dans les départements du Doubs, de la Haute-Saône et du Territoire de
+        Belfort.
         <br>Pour tout renseignement complémentaire, n'hésitez pas à nous contacter.
     </p>
-    <button class="button__contact">
-        <p>Contact</p>
-    </button>
+    <a href="contact">
+        <button class="button__contact">
+            <p>Contact</p>
+        </button>
+    </a>
 </div>
 </section>
 <div class="pres__activites">
